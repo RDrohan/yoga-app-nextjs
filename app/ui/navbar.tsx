@@ -7,8 +7,8 @@ export default function Navbar() {
   const [state, setState] = useState(false);
 
   const navigation = [
-    { title: "Categories", path: "/categories" },
-    { title: "Poses", path: "/poses" },
+    { title: "Categories", path: "/" },
+    { title: "Poses", path: "/poses/all" },
   ];
 
   return (

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Footer from "./ui/footer";
+import Navbar from "./ui/navbar";
 
 // These styles apply to every route in the application
 import "./globals.css";
@@ -15,7 +17,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div className="flex flex-col h-screen justify-between">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }

@@ -15,7 +15,7 @@ export default function Categories() {
   }, []);
 
   return (
-    <section className="mt-12 max-w-screen-lg mx-auto px-4 md:px-8">
+    <section className="my-12 max-w-screen-lg mx-auto px-4 md:px-8">
       <div>
         <h1 className="text-red-500 text-3xl font-semibold">Categories</h1>
       </div>
@@ -23,7 +23,7 @@ export default function Categories() {
       <ul className="mt-12 space-y-6">
         {categories.map((category, idx) => (
           <li key={idx} className="p-5 bg-white rounded-md shadow-sm">
-            <Link href="/">
+            <Link href={`/categories/${category.id}`}>
               <div>
                 <div className="justify-between sm:flex">
                   <div className="flex-1">
