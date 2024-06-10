@@ -23,3 +23,20 @@ npm install
 npm run dev
 ```
 5. Then go to [http://localhost:3000/](http://localhost:3000/) to access site
+
+## Run Docker Image
+1. [Install Docker](https://docs.docker.com/get-docker/) on your machine and make sure it is running
+
+2. Build your container
+
+```sh
+docker build -t yoga-app .
+```
+
+2. Run your container
+
+```sh
+docker run -p 3000:3000 nextjs-docker
+```
+
+4. Then go to [http://localhost:3000/](http://localhost:3000/) to access site

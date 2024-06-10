@@ -5,8 +5,8 @@ import { useState, useEffect } from "react";
 export default function Category({ params }: { params: { id: string } }) {
   const id = params.id;
 
-  const [category, setCategory] = useState([]);
-  const [poses, setPoses] = useState([]);
+  const [category, setCategory] = useState<any>({});
+  const [poses, setPoses] = useState<any[]>([]);
 
   useEffect(() => {
     fetch(`/api/categories/${id}`)

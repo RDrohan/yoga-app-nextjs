@@ -2,10 +2,11 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+
 export default function Poses({ params }: { params: { level: string } }) {
   const level = params.level || "all";
 
-  const [poses, setPoses] = useState([]);
+  const [poses, setPoses] = useState<any[]>([]);
 
   useEffect(() => {
     fetch(`/api/poses/level/${level}`)

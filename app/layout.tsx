@@ -6,7 +6,10 @@ import Navbar from "./ui/navbar";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Yoga App NextJS",
+  title: {
+    template: "%s | Yoga App NextJS",
+    default: "Yoga App NextJS",
+  },
   description: "Yoga app made with NextJS",
 };
 
